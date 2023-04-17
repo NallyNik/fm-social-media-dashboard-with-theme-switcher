@@ -4,84 +4,209 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/output.css">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Social Media Dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    <div>
+      <h1>Social Media Dashboard</h1>
+      <p>Total Followers: 23,004</p>
+    </div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
+    <div>
+      <label for="theme" class="theme">
+        Dark Mode
+        
+        <div class="chk-bg">
+          <input type="checkbox" name="theme" id="theme" class="theme">
+          <div class="chk-ball"></div>
+        </div>
+      </label>
+    </div>
+  </header>
   
+  <main>
+    <section class="followers">
+      <div class="card facebook">
+        <div>
+          <img src="./assets/images/icon-facebook.svg" alt="">
+          <span>@nathanf</span>
+        </div>
+        <h2>1987</h2>
+        <p>Followers</p>
+        <div>
+          <img src="./assets/images/icon-up.svg" alt="">
+          <span class="icon-up">12 Today</span>
+        </div>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <div class="card twitter">
+        <div>
+          <img src="./assets/images/icon-twitter.svg" alt="">
+          <span>@nathanf</span>
+        </div>
+        <h2>1044</h2>
+        <p>Followers</p>
+        <div>
+          <img src="./assets/images/icon-up.svg" alt="">
+          <span class="icon-up">99 Today</span>
+        </div>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="card instagram">
+        <div>
+          <img src="./assets/images/icon-instagram.svg" alt="">
+          <span>@realnathanf</span>
+        </div>
+        <h2>11k</h2>
+        <p>Followers</p>
+        <div>
+          <img src="./assets/images/icon-up.svg" alt="">
+          <span class="icon-up">1099 Today</span>
+        </div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <div class="card youtube">
+        <div>
+          <img src="./assets/images/icon-youtube.svg" alt="">
+          <span>Nathan F.</span>
+        </div>
+        <h2>8239</h2>
+        <p>Subscribers</p>
+        <div>
+          <img src="./assets/images/icon-down.svg" alt="">
+          <span class="icon-down">144 Today</span>
+        </div>
+      </div>
+    </section>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <section class="overview">
+      <h2>Overview - Today</h2>
+      <div class="card">
+        <div>
+          <p>Page Views</p>
+          <img src="./assets/images/icon-facebook.svg" alt="">
+        </div>
+        <div>
+          <h3>87</h3>
+          <div>
+            <img src="./assets/images/icon-up.svg" alt="">
+            <span class="icon-up">3%</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="card">
+        <div>
+          <p>Likes</p>
+          <img src="./assets/images/icon-facebook.svg" alt="">
+        </div>
+        <div>
+          <h3>52</h3>
+          <div>
+            <img src="./assets/images/icon-down.svg" alt="">
+            <span class="icon-down">2%</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="card">
+        <div>
+          <p>Likes</p>
+          <img src="./assets/images/icon-instagram.svg" alt="">
+        </div>
+        <div>
+          <h3>5462</h3>
+          <div>
+            <img src="./assets/images/icon-up.svg" alt="">
+            <span class="icon-up">2257%</span>
+          </div>
+        </div>
+      </div>
 
-  Overview - Today
+      <div class="card">
+        <div>
+          <p>Profile Views</p>
+          <img src="./assets/images/icon-instagram.svg" alt="">
+        </div>
+        <div>
+          <h3>52k</h3>
+          <div>
+            <img src="./assets/images/icon-up.svg" alt="">
+            <span class="icon-up">303%</span>
+          </div>
+        </div>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div class="card">
+        <div>
+          <p>Retweets</p>
+          <img src="./assets/images/icon-twitter.svg" alt="">
+        </div>
+        <div>
+          <h3>117</h3>
+          <div>
+            <img src="./assets/images/icon-up.svg" alt="">
+            <span class="icon-up">303%</span>
+          </div>
+        </div>
+      </div>
 
-  Likes
-  52
-  2%
+      <div class="card">
+        <div>
+          <p>Likes</p>
+          <img src="./assets/images/icon-twitter.svg" alt="">
+        </div>
+        <div>
+          <h3>507</h3>
+          <div>
+            <img src="./assets/images/icon-up.svg" alt="">
+            <span class="icon-up">553%</span>
+          </div>
+        </div>
+      </div>
 
-  Likes
-  5462
-  2257%
+      <div class="card">
+        <div>
+          <p>Likes</p>
+          <img src="./assets/images/icon-youtube.svg" alt="">
+        </div>
+        <div>
+          <h3>107</h3>
+          <div>
+            <img src="./assets/images/icon-down.svg" alt="">
+            <span class="icon-down">19%</span>
+          </div>
+        </div>
+      </div>
 
-  Profile Views
-  52k
-  1375%
+      <div class="card">
+        <div>
+          <p>Total Views</p>
+          <img src="./assets/images/icon-youtube.svg" alt="">
+        </div>
+        <div>
+          <h3>1407</h3>
+          <div>
+            <img src="./assets/images/icon-down.svg" alt="">
+            <span class="icon-down">12%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  Retweets
-  117
-  303%
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/NallyNik" target="_blank">NallyNik</a>.
+    </div>
+  </footer>
 
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
