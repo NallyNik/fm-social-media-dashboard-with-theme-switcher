@@ -50,7 +50,7 @@ body {
 h1, h2, h3 {
     color: var(--secondary-text);
 }
-p, span, a {
+p, span, a, label {
     color: var(--primary-text);
 }
 header, main {
@@ -65,16 +65,18 @@ header {
         font-weight: bold;
     }
 }
-.theme {
-    opacity: 0;
-    position: absolute;
-}
-label {
+.theme-container {
     margin-top: 1rem;
     padding-top: 1rem;
     @include flex(row, space-between, center);
-
+    
     border-top: 1px solid var(--secondary-text);
+}
+.theme {
+    opacity: 0;
+    position: absolute;
+    top: .3rem;
+    left: 1rem;
 }
 .chk-bg {
     width: 3rem;
@@ -197,7 +199,7 @@ footer {
             font-size: 2rem;
         }
     }
-    label {
+    .theme-container {
         border-top: none;
         gap: .5rem;
         cursor: pointer;
