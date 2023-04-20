@@ -28,6 +28,7 @@ body {
     --bg: hsl(0, 0%, 100%);
     --top-bg-pattern: hsl(225, 100%, 98%);
     --card-bg: hsl(227, 47%, 96%);
+    --hover: brightness(.9);
     --primary-text: hsl(228, 12%, 44%);
     --secondary-text: hsl(230, 17%, 14%);
     --toggle: hsl(230, 22%, 74%);
@@ -40,6 +41,7 @@ body {
     --bg: hsl(230, 17%, 14%);
     --top-bg-pattern:hsl(232, 19%, 15%);
     --card-bg: hsl(228, 28%, 20%);
+    --hover: brightness(1.4);
     --primary-text: hsl(228, 34%, 66%);
     --secondary-text: hsl(0, 0%, 100%);
     --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
@@ -178,4 +180,55 @@ label {
 }
 footer {
     text-align: center;
+}
+
+
+@media (min-width: 800px) {
+    body {
+        width: 100vw;
+        min-height: 100vh;
+        @include flex(column, center, center);
+    }
+    header {
+        width: 100%;
+        @include flex(row, space-between, center);
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    label {
+        border-top: none;
+        gap: .5rem;
+        cursor: pointer;
+    }
+    main {
+        width: 100%;
+        @include flex(column, center, center, 1rem);
+    }
+    .followers, .overview-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .overview {
+        width: 100%;
+    }
+    .card:hover {
+        cursor: pointer;
+        filter: var(--hover);
+    }
+    footer {
+        padding-bottom: .5rem;
+    }
+    a:hover {
+        color: $youtube;
+        text-decoration: none;
+    }
+}
+@media (min-width: 1000px) {
+    header, main {
+        width: 80%;
+    }
 }
